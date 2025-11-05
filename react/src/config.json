@@ -1,0 +1,62 @@
+{
+  "WSO2_APIM_KM": {
+    "TYPE": "KM",
+    "clientID": "6Azt3m6WPafVPWhu6Ou__KRJY0ca",
+    "baseUrl": "https://demo.wso2.siva.com:9443",
+    "signInRedirectURL": "http://localhost:3030",
+    "signOutRedirectURL": "http://localhost:3030",
+    "scope": ["openid", "email", "groups", "profile", "roles"],
+    "USE_AUTH": true,
+    "API_BASE_URL": "http://localhost:3010"
+  },
+  "WSO2_IS_KM": {
+    "TYPE": "KM",
+    "clientID": "S7zPzzwXkYVo_3ke7mw7WBgOBIYa",
+    "baseUrl": "https://demo.wso2.siva.com:9444",
+    "signInRedirectURL": "http://localhost:3030",
+    "signOutRedirectURL": "http://localhost:3030",
+    "scope": ["openid", "email", "groups", "profile", "roles"],
+    "USE_AUTH": true,
+    "API_BASE_URL": "http://localhost:3010"
+  },
+  "ASGARDEO_KM": {
+    "TYPE": "KM",
+    "clientID": "dFlaR69XfOqDmYgjPK7c4fzFcOwa",
+    "baseUrl": "https://api.asgardeo.io/t/sivanoly",
+    "signInRedirectURL": "http://localhost:3030",
+    "signOutRedirectURL": "http://localhost:3030",
+    "scope": ["openid", "email", "groups", "profile", "roles"],
+    "USE_AUTH": true,
+    "API_BASE_URL": "http://localhost:3010"
+  },
+  "WSO2_IS": {
+    "TYPE": "AUTH",
+    "clientID": "JccW1Vqp6ORQWBagzWs7s1_nP5Ea",
+    "baseUrl": "https://demo.wso2.siva.com:9444",
+    "signInRedirectURL": "http://localhost:3030",
+    "signOutRedirectURL": "http://localhost:3030",
+    "scope": ["openid", "email", "groups", "profile", "roles"],
+    "USE_AUTH": true,
+    "API_BASE_URL": "http://localhost:3010"
+  },
+  "ASGARDEO": {
+    "TYPE": "AUTH",
+    "clientID": "dFlaR69XfOqDmYgjPK7c4fzFcOwa",
+    "baseUrl": "https://api.asgardeo.io/t/sivanoly",
+    "signInRedirectURL": "http://localhost:3030",
+    "signOutRedirectURL": "http://localhost:3030",
+    "scope": ["openid", "email", "groups", "profile", "roles"],
+    "USE_AUTH": true,
+    "API_BASE_URL": "http://localhost:3010"
+  },
+  "NO_AUTH": {
+    "TYPE": "NO_AUTH",
+    "clientID": "NO_AUTH",
+    "baseUrl": "NO_AUTH",
+    "signInRedirectURL": "http://localhost:3030",
+    "signOutRedirectURL": "http://localhost:3030",
+    "scope": ["openid", "email", "groups", "profile", "roles"],
+    "USE_AUTH": false,
+    "API_BASE_URL": "http://localhost:3010"
+  }
+}

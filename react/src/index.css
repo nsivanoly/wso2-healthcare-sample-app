@@ -1,0 +1,128 @@
+:root {
+  font-family: 'Inter', 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Healthcare Color Palette */
+  --primary-green: #2E7D32;
+  --primary-blue: #1976D2;
+  --success-green: #4CAF50;
+  --warning-orange: #ED6C02;
+  --error-red: #D32F2F;
+  --info-cyan: #0288D1;
+  
+  /* Neutral Colors */
+  --background-light: #F8F9FA;
+  --background-white: #FFFFFF;
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --border-light: rgba(0, 0, 0, 0.12);
+
+  color-scheme: light dark;
+  color: var(--text-primary);
+  background-color: var(--background-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #F8F9FA 0%, #E3F2FD 100%);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-green);
+}
+
+/* Healthcare-specific utilities */
+.healthcare-gradient {
+  background: linear-gradient(45deg, var(--primary-green), var(--primary-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.healthcare-shadow {
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.healthcare-border {
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary-green);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
